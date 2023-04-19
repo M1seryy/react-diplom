@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+}
+.header {
+  width: 100%;
+  height: 90px;
+  padding: 20px;
+  background-color: #fff;
+  z-index: 7;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.user-data {
+  font-family: "Hind", sans-serif;
+  font-weight: 500;
+  color: #0e1133;
+  transition: 300ms ease-in-out;
+}
+.container {
+  max-width: 1200px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+.header-content {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  align-items: center;
+  gap: 30px;
+}
+.logo {
+  width: 114px;
+  height: 30px;
+}
+.nav-list {
+  margin: 0px;
+  width: 300px;
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin-top: 7px;
+}
+.nav {
+  display: flex;
+  gap: 50px;
+}
+.nav-item {
+  font-family: "Hind", sans-serif;
+  font-weight: 500;
+  color: #0e1133;
+  text-transform: capitalize;
+  transition: 300ms ease-in-out;
+  display: flex;
+  gap: 10px;
+  text-decoration: none;
+}
+.nav-item-select {
+  font-family: "Hind", sans-serif;
+  font-weight: 500;
+  color: #0e1133;
+
+  text-transform: capitalize;
+  transition: 300ms ease-in-out;
+  text-decoration: none;
+}
+.nav-item-select:hover {
+  color: #404bbf;
+}
+.courses-wrap-link {
+  position: relative;
+}
+.select-courses {
+  border: 2px solid rgb(234, 234, 234);
+  width: 105px;
+  /* height: 100px; */
+  padding: 8px;
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  display: flex;
+  gap: 0px;
+  flex-direction: column;
+  transition: 300ms ease-in-out;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+}
+.courses-wrap-link:hover .select-courses {
+  margin-top: 10px;
+  opacity: 1;
+}
+
+.nav-item::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-image: url("../../images/svg/angle-small-down.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.nav-item:hover {
+  color: #404bbf;
+}
+
+.sign-up {
+  font-family: "Hind", sans-serif;
+  background: #2b4eff;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+  height: 50px;
+  line-height: 52px;
+  padding: 0 25px;
+  text-align: center;
+  transition: color, box-shadow, 400ms ease-in-out;
+  text-decoration: none;
+  /* position: absolute;
+    right: 50px; */
+}
+.sign-up:hover {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  background: #213fd1;
+}
+.right-content {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.header-input {
+  background-color: rgb(237, 238, 244);
+  border: 1px solid grey;
+  border-radius: 4px;
+  font-size: 16px;
+  height: 50px;
+  line-height: 20px;
+  outline: none;
+  padding: 25px 65px 20px 55px;
+  width: 250px;
+  border: none;
+}

@@ -1,0 +1,18 @@
+.links-wrap {
+  width: 600px;
+  height: 300px;
+  position: absolute;
+  z-index: 16;
+  /* background: #c91d1d; */
+  top: 90px;
+  color: black;
+}
+.links-list {
+}
+.links-list  li a{
+    text-decoration: none;
+  font-family: Inter, sans-serif;
+  font-size: 24px;
+  color: rgb(0, 0, 0);
+  padding: 5px;
+}

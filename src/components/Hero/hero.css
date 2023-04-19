@@ -1,0 +1,126 @@
+.hero {
+  width: 100%;
+  /* height: 900px; */
+  box-sizing: border-box;
+  padding: 100px 30px 50px;
+  background: #edeef3;
+}
+.text-content {
+  width: 540px;
+  height: 400px;
+  margin-top: 50px;
+  /* outline: 2px solid black; */
+}
+.container {
+  max-width: 1200px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+.img-content {
+  /* width: 570px; */
+  height: 470px;
+  display: flex;
+  gap: 50px;
+  /* outline: 2px solid black; */
+}
+.hero-content {
+  display: flex;
+  gap: 30px;
+  margin-top: 90px;
+}
+.main-text-content {
+  color: #0e1133;
+  font-family: "Hind", sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 1.2;
+  margin: 0;
+}
+.main-text-sub-title {
+  color: #0e1133;
+  font-family: Hind, sans-serif;
+  font-weight: 300;
+  font-size: 50px;
+  margin: 0;
+  line-height: 1.2;
+}
+.hero-btn {
+  background: #2b4eff;
+  border-radius: 4px;
+  font-family: Hind, sans-serif;
+  color: #fff;
+  display: inline-block;
+  font-weight: 500;
+  height: 50px;
+  line-height: 52px;
+  padding: 0 25px;
+  text-align: center;
+  border: none;
+  margin-top: 20px;
+  transition: color, box-shadow, 400ms ease-in-out;
+}
+.hero-btn:hover {
+  box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.15);
+  background: #213fd1;
+}
+.hero-img-thumb {
+  min-width: 400px;
+  height: 460px;
+  box-sizing: border-box;
+  border-radius: 30px 0 30px 0;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../../images/course-1.jpg");
+  background-repeat: no-repeat;
+  z-index: 3;
+}
+.hero-sub-img {
+  box-sizing: border-box;
+  border-radius: 0 30px 30px;
+  min-width: 200px;
+  height: 240px;
+  background-image: url("https://react-educal.netlify.app/assets/img/hero/hero-sm-1.jpg");
+  background-size: contain;
+  position: relative;
+  right: 20px;
+  top: 50px;
+  z-index: 3;
+}
+.backCircle {
+  position: absolute;
+  right: 200px;
+  bottom: 100px;
+}
+@keyframes infinite-circle {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.circle-cloud {
+  position: absolute;
+  top: 200px;
+  left: 50px;
+  z-index: 5;
+  animation: infinite-circle 5000ms infinite linear;
+}
+.text-box {
+  position: absolute;
+  right: 80px;
+  bottom: 140px;
+  background: #ffffff;
+  box-shadow: 0px 30px 60px rgba(1, 11, 60, 0.14);
+  border-radius: 4px;
+  width: 166px;
+  height: 78px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Hind";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 26px;
+  color: #0e1133;
+}

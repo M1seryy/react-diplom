@@ -1,0 +1,35 @@
+.courses-wrap {
+  box-sizing: border-box;
+  width: 168px;
+  /* height: 220px; */
+  border: 2px solid rgb(234, 234, 234);
+  border-radius: 15px;
+  padding: 10px;
+}
+.main-course-icon {
+  width: 100%;
+}
+.item-title {
+  font-family: "Hind", sans-serif;
+  font-weight: 700;
+  color: #0e1133;
+}
+.sub-title {
+  margin-top: 10px;
+  font-family: "Hind", sans-serif;
+  color: #828284;
+}
+.like-btn {
+  stroke: black;
+  stroke-width: 5;
+  fill: none;
+transition: fill,stroke 400ms ease-in-out;
+}
+.like-btn:hover{
+  fill: red;
+  stroke: red;
+}
+.liked-btn{
+  fill: red;
+  stroke: red;
+}

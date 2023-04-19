@@ -1,0 +1,81 @@
+.cardWrap {
+  width: 100%;
+  height: calc(100% - 90px);
+  position: absolute;
+  z-index: 6;
+  background: #fff;
+  top: 90px;
+}
+.cardPage-categories {
+  width: 600px;
+  display: flex;
+  gap: 20px;
+  border-bottom: 2px solid rgb(234, 234, 234);
+  padding: 15px;
+}
+.page-main-content {
+  height: 500px;
+  /* border: 1px solid red; */
+}
+.text {
+  font-family: Inter, sans-serif;
+  padding: 5px;
+  margin-top: 10px;
+}
+.takeAways {
+  /* list-style: none; */
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  margin-top: 10px;
+  color: rgb(209, 33, 232);
+}
+.takeAway-link {
+  font-family: Inter, sans-serif;
+  font-size: 20px;
+}
+/* CSS */
+.button-69 {
+  background-color: initial;
+  background-image: linear-gradient(#8614f8 0, #760be0 100%);
+  border-radius: 5px;
+  border-style: none;
+  box-shadow: rgba(245, 244, 247, 0.25) 0 1px 1px inset;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  height: 60px;
+  line-height: 60px;
+  margin-left: -4px;
+  outline: 0;
+  text-align: center;
+  transition: all 0.3s cubic-bezier(0.05, 0.03, 0.35, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: bottom;
+  width: 160px;
+  margin-top: 20px;
+}
+
+.button-69:hover {
+  opacity: 0.7;
+}
+
+@media screen and (max-width: 1000px) {
+  .button-69 {
+    font-size: 14px;
+    height: 55px;
+    line-height: 55px;
+    width: 150px;
+  }
+}
+.title-wrap {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}

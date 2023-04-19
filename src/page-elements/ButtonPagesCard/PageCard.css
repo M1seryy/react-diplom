@@ -1,0 +1,12 @@
+.pageCard-btn {
+  height: 60px;
+  padding: 15px;
+  background-color: rgb(208, 227, 34);
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Inter, sans-serif;
+  color: white;
+ 
+}
