@@ -1,7 +1,7 @@
 import axios from "axios";
 import React, { useEffect, useRef, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { Link, useParams } from "react-router-dom";
+import { Await, Link, useParams } from "react-router-dom";
 import { Routes, Route } from "react-router-dom";
 import PageCard from "../../page-elements/ButtonPagesCard/PageCard";
 import Links from "../Links/Links";
@@ -16,7 +16,9 @@ const CardPage = ({}) => {
   const classWord = "cardWrap".split("");
   const { id } = useParams();
 
-  // const courseNavigation = ["Usefull Links", "YouTube"];
+  const changeData = async (obj) => {
+    axios.put(`${POST_URL}/${obj.id}`, obj);
+  };
 
   const filterById = () => {
     setCurrentData(
@@ -27,21 +29,22 @@ const CardPage = ({}) => {
   };
   const setProgressHandler = () => {
     let copy = { ...currentData[0] };
-    data.map((item) => {
-      Object.keys(item).forEach((key) => {
-        item["inProgress"] = true;
-      });
+    // console.log(copy);
+    Object.keys(copy).forEach((key) => {
+      copy["inProgress"] = true;
     });
+    data.map((item) => {
+      for (const key in item) {
+        if (item["id"] == copy.id) {
+          item["inProgress"] = true;
+          changeData(item);
+        }
+      }
+    });
+    // const copyOfLessons = [...data];
     dispatch({ type: "add_lessons", payload: data });
-
-    // Object.keys(copy).forEach((key) => {
-    //   copy["inProgress"] = true;
-    // });
-
-    // setCurrentData((prev) => ({ ...prev, ...copy }));
-    // await axios.post(POST_URL, ...currentData);
   };
-  setProgressHandler();
+
   const returnWord = () => {
     if (id) {
       setNewClass(classWord.join(""));
@@ -72,7 +75,9 @@ const CardPage = ({}) => {
                 <>
                   <div className="title-wrap">
                     <h1 className="text">{currentData[0].title}</h1>
-                    <button className="button-69">Get this course</button>
+                    <button onClick={setProgressHandler} className="button-69">
+                      Get this course
+                    </button>
                   </div>
                   <h2 className="text">Type:{currentData[0].type}</h2>
                   <ul className="takeAways">

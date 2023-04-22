@@ -34,7 +34,9 @@ function App() {
         <Route path="/reg" element={<Reg />} />
         <Route
           path="/courses/*"
-          element={<Courses lessons={lessons} data={data} />}
+          element={
+            <Courses setData={setLessons} lessons={lessons} data={data} />
+          }
         />
         <Route path="/favourite" element={<Favourite />} />
         <Route path="/card/:id/*" element={<CardPage />} />
