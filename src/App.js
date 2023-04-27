@@ -10,6 +10,7 @@ import Courses from "./components/Courses/Courses";
 import Favourite from "./components/Favourite/Favourite";
 import CardPage from "./components/CardPage/CardPage";
 import Links from "./components/Links/Links";
+import Profile from "./components/Profile/Profile";
 
 function App() {
   // const tokenSelector = useSelector((state) => state.auth.token);
@@ -38,6 +39,7 @@ function App() {
             <Courses setData={setLessons} lessons={lessons} data={data} />
           }
         />
+         <Route path="/profile/*" element={<Profile/>} />
         <Route path="/favourite" element={<Favourite />} />
         <Route path="/card/:id/*" element={<CardPage />} />
       </Routes>

@@ -6,12 +6,12 @@
   top: 90px;
   height: calc(100% - 90px);
 }
-.hidden{
+.hidden {
   display: none;
 }
-.link {
+/* .link {
   text-decoration: none;
-}
+} */
 .all-courses {
   display: flex;
   flex-direction: column;

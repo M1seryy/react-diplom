@@ -145,3 +145,13 @@ body {
   width: 250px;
   border: none;
 }
+.user-active {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  border: 2px solid black;
+  padding: 6px;
+}
+.user-active-icon {
+  width: 100%;
+}

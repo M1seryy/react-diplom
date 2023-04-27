@@ -1,0 +1,66 @@
+.profile-wrap {
+  width: 100%;
+  position: absolute;
+  z-index: 6;
+  background: #fff;
+  top: 90px;
+  height: calc(100% - 90px);
+}
+.profile-content {
+  border: 2px solid rgb(234, 234, 234);
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+}
+.side-bar {
+  width: 200px;
+  height: 600px;
+  border: 2px solid rgb(234, 234, 234);
+  border-radius: 10px;
+  display: flex;
+  padding: 5px;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.side-bar-item {
+  width: 90%;
+  height: 70px;
+  border-radius: 10px;
+  border: 2px solid rgb(234, 234, 234);
+  font-family: "Poppins";
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  background-color: rgb(254, 155, 3);
+  justify-content: center;
+  color: black;
+  transition: box-shadow, 300ms ease-in-out;
+}
+.side-bar-item:hover {
+  box-shadow: 7px 10px 5px 0px rgba(0, 0, 0, 0.56);
+}
+.side-bar :last-child {
+  background-color: rgb(24, 107, 193);
+}
+.main-profile-content {
+
+  display: flex;
+  flex-grow: 1;
+}
+.creator-form{
+    display: flex;
+    flex-direction: column;
+}
+.creator-form{
+  width: 600px;
+  padding: 10px;
+}
+.link-content{
+  border: 2px solid rgb(24, 107, 193);
+  margin-bottom: 10px;
+  margin-top: 10px;
+  border-radius: 10px;
+  padding: 5px;
+
+}
